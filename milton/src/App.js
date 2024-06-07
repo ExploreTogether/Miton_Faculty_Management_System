@@ -1,14 +1,18 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import './App.css';
+import DashBoard from './components/DashBoard/DashBoard';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       <h1>Hello World</h1>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<DashBoard />} />
+      
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+
